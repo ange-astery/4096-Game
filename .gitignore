@@ -1,0 +1,25 @@
+# Build directories & CMake artifacts
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Compiled binaries & object files
+*.o
+*.obj
+*.out
+*.exe
+game4096
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.dSYM/
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.swp
