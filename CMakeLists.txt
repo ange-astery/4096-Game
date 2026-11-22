@@ -6,5 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_compile_options(-Wall -Wextra -Wpedantic)
 
-add_executable(game4096 src/main.cpp)
+add_executable(game4096
+        src/main.cpp
+        src/Tile.cpp
+)
+
 target_include_directories(game4096 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
