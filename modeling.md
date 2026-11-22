@@ -16,7 +16,7 @@
 
             + move(Direction dir) int
             + spawnTile() bool
-            + checkSGridSpace() bool
+            + checkGridSpace() bool
             - mergeTiles(Tile& t1, Tile& t2) void
         }
 
@@ -27,6 +27,8 @@
             + getValue() int
             + setValue(int v) void
             + getIsMerged() bool
+            + setValue(int) void
+            + setIsMerged(bool) void
         }
 
         class Direction {
