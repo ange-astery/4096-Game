@@ -3,7 +3,7 @@
         class Game {
             - int score
             - string player
-            - file* scores
+            - FILE* scores
 
             + launch() void
             + calculateScore() int
@@ -14,10 +14,10 @@
             - int size
             - vector ~ Tile ~ tiles
 
-            + move(Direction dir) void
+            + move(Direction dir) int
             + spawnTile() bool
             + checkSGridSpace() bool
-            + mergeTiles(Tile t1, Tile t2) void
+            - mergeTiles(Tile& t1, Tile& t2) void
         }
 
         class Tile {
@@ -25,10 +25,12 @@
             - bool isMerged
 
             + getValue() int
+            + setValue(int v) void
+            + getIsMerged() bool
         }
 
         class Direction {
-            <<enum>>
+            <<enumeration>>
             UP
             DOWN
             LEFT
@@ -36,5 +38,5 @@
         }
 
         Grid "1" *-- "*" Tile
-        Grid <.. Direction
-        Game "1" <-- "1" Grid : possede
+        Direction <.. Grid
+        Grid "1" <-- "1" Game : possede
