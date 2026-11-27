@@ -4,7 +4,7 @@
 class Tile
 {
     public:
-        Tile(int value = 0);
+        explicit Tile(int value = 0);
 
         int getValue() const;
         void setValue(int value);

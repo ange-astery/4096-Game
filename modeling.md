@@ -3,7 +3,7 @@
         class Game {
             - int score
             - string player
-            - FILE* scores
+            - string scoresFilePath
 
             + launch() void
             + calculateScore() int
@@ -14,6 +14,8 @@
             - int size
             - vector ~ Tile ~ tiles
 
+            + display() void
+            + canMove() bool
             + move(Direction dir) int
             + spawnTile() bool
             + checkGridSpace() bool
@@ -27,8 +29,8 @@
             + getValue() int
             + setValue(int v) void
             + getIsMerged() bool
-            + setValue(int) void
             + setIsMerged(bool) void
+            + isEmpty() bool
         }
 
         class Direction {
