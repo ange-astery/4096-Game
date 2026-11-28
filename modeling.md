@@ -12,7 +12,7 @@
 
         class Grid {
             - int size
-            - vector ~ Tile ~ tiles
+            - vector ~ vector ~ Tile ~~
 
             + display() void
             + canMove() bool
